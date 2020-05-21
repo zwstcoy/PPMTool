@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ProjectItem from "./Project/ProjectItem";
 import CreateProjectButton from "./Project/CreateProjectButton";
 
-export default class Dashboard extends Component {
+class Dashboard extends Component {
   render() {
     return (
       <div className="projects">
@@ -11,9 +11,9 @@ export default class Dashboard extends Component {
             <div className="col-md-12">
               <h1 className="display-4 text-center">Projects</h1>
               <br />
+              <CreateProjectButton />
               <br />
               <hr />
-              <CreateProjectButton />
               <ProjectItem />
             </div>
           </div>
@@ -22,3 +22,5 @@ export default class Dashboard extends Component {
     );
   }
 }
+
+export default Dashboard;
