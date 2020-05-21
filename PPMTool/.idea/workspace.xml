@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96e88e91-d95d-4cea-8be2-fbba0569788c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/exceptions/ProjectIdException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/exceptions/ProjectIdExceptionResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/domain/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/web/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/web/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/service/ProjectService.java" afterDir="false" />
-    </list>
+    <list default="true" id="96e88e91-d95d-4cea-8be2-fbba0569788c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,17 +25,6 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="testdb" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="testdb" type="feb32156:DbDataSourceImpl" />
-        <item name="TESTDB: database" type="2aa06773:H2ImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="testdb" type="feb32156:DbDataSourceImpl" />
-        <item name="TESTDB: database" type="2aa06773:H2ImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -203,7 +184,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590018024325</updated>
-      <workItem from="1590018026933" duration="8350000" />
+      <workItem from="1590018026933" duration="9331000" />
     </task>
     <servers />
   </component>
@@ -246,38 +227,38 @@
       <screen x="1440" y="64" width="1920" height="1057" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590019338724" />
-    <state width="1196" height="222" key="GridCell.Tab.0.bottom" timestamp="1590029260220">
+    <state width="1196" height="313" key="GridCell.Tab.0.bottom" timestamp="1590030254093">
       <screen x="1440" y="64" width="1920" height="1057" />
     </state>
-    <state width="1196" height="222" key="GridCell.Tab.0.bottom/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590029260220" />
-    <state width="1196" height="222" key="GridCell.Tab.0.center" timestamp="1590029260219">
+    <state width="1196" height="313" key="GridCell.Tab.0.bottom/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590030254093" />
+    <state width="1196" height="313" key="GridCell.Tab.0.center" timestamp="1590030254092">
       <screen x="1440" y="64" width="1920" height="1057" />
     </state>
-    <state width="1196" height="222" key="GridCell.Tab.0.center/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590029260219" />
-    <state width="1196" height="222" key="GridCell.Tab.0.left" timestamp="1590029260219">
+    <state width="1196" height="313" key="GridCell.Tab.0.center/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590030254092" />
+    <state width="1196" height="313" key="GridCell.Tab.0.left" timestamp="1590030254091">
       <screen x="1440" y="64" width="1920" height="1057" />
     </state>
-    <state width="1196" height="222" key="GridCell.Tab.0.left/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590029260219" />
-    <state width="1196" height="222" key="GridCell.Tab.0.right" timestamp="1590029260220">
+    <state width="1196" height="313" key="GridCell.Tab.0.left/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590030254091" />
+    <state width="1196" height="313" key="GridCell.Tab.0.right" timestamp="1590030254092">
       <screen x="1440" y="64" width="1920" height="1057" />
     </state>
-    <state width="1196" height="222" key="GridCell.Tab.0.right/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590029260220" />
-    <state width="1196" height="222" key="GridCell.Tab.1.bottom" timestamp="1590029260222">
+    <state width="1196" height="313" key="GridCell.Tab.0.right/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590030254092" />
+    <state width="1196" height="313" key="GridCell.Tab.1.bottom" timestamp="1590030254095">
       <screen x="1440" y="64" width="1920" height="1057" />
     </state>
-    <state width="1196" height="222" key="GridCell.Tab.1.bottom/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590029260222" />
-    <state width="1196" height="222" key="GridCell.Tab.1.center" timestamp="1590029260221">
+    <state width="1196" height="313" key="GridCell.Tab.1.bottom/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590030254095" />
+    <state width="1196" height="313" key="GridCell.Tab.1.center" timestamp="1590030254094">
       <screen x="1440" y="64" width="1920" height="1057" />
     </state>
-    <state width="1196" height="222" key="GridCell.Tab.1.center/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590029260221" />
-    <state width="1196" height="222" key="GridCell.Tab.1.left" timestamp="1590029260221">
+    <state width="1196" height="313" key="GridCell.Tab.1.center/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590030254094" />
+    <state width="1196" height="313" key="GridCell.Tab.1.left" timestamp="1590030254093">
       <screen x="1440" y="64" width="1920" height="1057" />
     </state>
-    <state width="1196" height="222" key="GridCell.Tab.1.left/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590029260221" />
-    <state width="1196" height="222" key="GridCell.Tab.1.right" timestamp="1590029260222">
+    <state width="1196" height="313" key="GridCell.Tab.1.left/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590030254093" />
+    <state width="1196" height="313" key="GridCell.Tab.1.right" timestamp="1590030254094">
       <screen x="1440" y="64" width="1920" height="1057" />
     </state>
-    <state width="1196" height="222" key="GridCell.Tab.1.right/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590029260222" />
+    <state width="1196" height="313" key="GridCell.Tab.1.right/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590030254094" />
     <state width="1099" height="357" key="GridCell.Tab.2.bottom" timestamp="1590021348293">
       <screen x="1440" y="64" width="1920" height="1057" />
     </state>
@@ -294,5 +275,9 @@
       <screen x="1440" y="64" width="1920" height="1057" />
     </state>
     <state width="1099" height="357" key="GridCell.Tab.2.right/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590021348292" />
+    <state width="182" height="453" key="HiddenNamespacesPopup" timestamp="1590029955778">
+      <screen x="1440" y="64" width="1920" height="1057" />
+    </state>
+    <state width="182" height="453" key="HiddenNamespacesPopup/0.23.1440.822/1440.64.1920.1057@1440.64.1920.1057" timestamp="1590029955778" />
   </component>
 </project>
