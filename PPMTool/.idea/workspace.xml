@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96e88e91-d95d-4cea-8be2-fbba0569788c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database/test.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database/test.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/PpmtoolApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/PpmtoolApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/domain/Project.java" afterDir="false" />
-    </list>
+    <list default="true" id="96e88e91-d95d-4cea-8be2-fbba0569788c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,6 +166,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.1588785" />
           <treeState>
             <expand>
               <path>
@@ -200,7 +195,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590018024325</updated>
-      <workItem from="1590018026933" duration="4726000" />
+      <workItem from="1590018026933" duration="5689000" />
     </task>
     <servers />
   </component>

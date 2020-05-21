@@ -2,12 +2,18 @@ package com.example.ppmtool.domain;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
+import javax.validation.Valid;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 public class Project {
@@ -16,13 +22,24 @@ public class Project {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
+  @NotBlank(message = "Project name is require")
   private String projectName;
-  private String projectIdentifier;
 
+  @NotBlank(message = "Project identifier is require")
+  @Size(min = 4, max = 4, message = "Range between 4 - 5 characters")
+  @Column(updatable = false, unique = true)
+  private String projectIdentifier;
+  @NotBlank(message = "Project description is require")
   private String description;
+
+  @JsonFormat(pattern = "yyyy-mm-dd")
   private Date startDate;
+  @JsonFormat(pattern = "yyyy-mm-dd")
   private Date endDate;
+
+  @JsonFormat(pattern = "yyyy-mm-dd")
   private Date createAt;
+  @JsonFormat(pattern = "yyyy-mm-dd")
   private Date updateAt;
 
   public Project() {
@@ -93,12 +110,12 @@ public class Project {
   }
 
   @PrePersist
-  protected void onCreate(){
+  protected void onCreate() {
     this.createAt = new Date();
   }
 
   @PreUpdate
-  protected void onUpdate(){
+  protected void onUpdate() {
     this.updateAt = new Date();
   }
 
