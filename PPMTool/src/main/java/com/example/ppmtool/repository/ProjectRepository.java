@@ -13,4 +13,7 @@ import com.example.ppmtool.domain.Project;
 public interface ProjectRepository extends CrudRepository<Project, String> {
 
   Project findByProjectIdentifier(String projectId);
+
+  @Override
+  Iterable<Project> findAll();
 }
