@@ -16,7 +16,7 @@ public class Project {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
-  private String name;
+  private String projectName;
   private String projectIdentifier;
 
   private String description;
@@ -36,12 +36,12 @@ public class Project {
     this.id = id;
   }
 
-  public String getName() {
-    return name;
+  public String getProjectName() {
+    return projectName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setProjectName(String projectName) {
+    this.projectName = projectName;
   }
 
   public String getProjectIdentifier() {

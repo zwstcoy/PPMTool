@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ppmtool.iml" filepath="$PROJECT_DIR$/ppmtool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PPMTool.iml" filepath="$PROJECT_DIR$/PPMTool.iml" />
     </modules>
   </component>
 </project>
