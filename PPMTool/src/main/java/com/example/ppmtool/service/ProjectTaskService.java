@@ -1,9 +1,13 @@
 package com.example.ppmtool.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import com.example.ppmtool.domain.Backlog;
+import com.example.ppmtool.domain.Project;
 import com.example.ppmtool.domain.ProjectTask;
 import com.example.ppmtool.repository.BacklogRepository;
 import com.example.ppmtool.repository.ProjectTaskRepository;
@@ -39,6 +43,10 @@ public class ProjectTaskService {
     if (projectTask.getStatus() == null || projectTask.getStatus().equals("")) {
       projectTask.setStatus("TO_DO");
     }
-    return projectTask;
+    return projectTaskRepository.save(projectTask);
+  }
+
+  public Iterable<ProjectTask> findBacklogById(String backlog_id) {
+    return projectTaskRepository.findByProjectIdentifierOrderByPriority(backlog_id);
   }
 }

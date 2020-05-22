@@ -86,6 +86,8 @@ public class Backlog {
         "id=" + id +
         ", PTSequence=" + PTSequence +
         ", projectIdentifier='" + projectIdentifier + '\'' +
+        ", project=" + project +
+        ", projectTasks=" + projectTasks +
         '}';
   }
 }
