@@ -9,5 +9,5 @@ import com.example.ppmtool.domain.Project;
 
 @Repository
 public interface BacklogRepository extends CrudRepository<Backlog, Long> {
-
+  Backlog findByProjectIdentifier(String projectIdentifier);
 }

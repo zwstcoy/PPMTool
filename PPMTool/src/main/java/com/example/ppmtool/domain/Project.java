@@ -2,11 +2,14 @@ package com.example.ppmtool.domain;
 
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.validation.constraints.NotBlank;
@@ -38,11 +41,23 @@ public class Project {
 
   @JsonFormat(pattern = "yyyy-mm-dd")
   @Column(updatable = false)
-  private Date createAt;
+  private Date create_At;
   @JsonFormat(pattern = "yyyy-mm-dd")
-  private Date updateAt;
+  private Date update_At;
+
+  @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "project")
+  //
+  private Backlog backlog;
 
   public Project() {
+  }
+
+  public Backlog getBacklog() {
+    return backlog;
+  }
+
+  public void setBacklog(Backlog backlog) {
+    this.backlog = backlog;
   }
 
   public Long getId() {
@@ -93,30 +108,31 @@ public class Project {
     this.end_date = endDate;
   }
 
-  public Date getCreateAt() {
-    return createAt;
+
+  public Date getCreate_At() {
+    return create_At;
   }
 
-  public void setCreateAt(Date createAt) {
-    this.createAt = createAt;
+  public void setCreate_At(Date create_At) {
+    this.create_At = create_At;
   }
 
-  public Date getUpdateAt() {
-    return updateAt;
+  public Date getUpdate_At() {
+    return update_At;
   }
 
-  public void setUpdateAt(Date updateAt) {
-    this.updateAt = updateAt;
+  public void setUpdate_At(Date update_At) {
+    this.update_At = update_At;
   }
 
   @PrePersist
   protected void onCreate() {
-    this.createAt = new Date();
+    this.create_At = new Date();
   }
 
   @PreUpdate
   protected void onUpdate() {
-    this.updateAt = new Date();
+    this.update_At = new Date();
   }
 
 
