@@ -67,4 +67,9 @@ public class ProjectTaskService {
     Iterable<ProjectTask> projectTasks = projectTaskRepository.findByProjectIdentifierOrderByPriority(backlog_id);
     return projectTasks;
   }
+
+  public ProjectTask findProjectTaskByProjectSequence(String backlog_id, String sequence){
+    ProjectTask projectTask = projectTaskRepository.findProjectTaskByProjectSequence(sequence);
+    return projectTask;
+  }
 }

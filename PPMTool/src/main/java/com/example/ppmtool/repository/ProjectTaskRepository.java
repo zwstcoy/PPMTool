@@ -13,4 +13,6 @@ import com.example.ppmtool.domain.ProjectTask;
 public interface ProjectTaskRepository extends CrudRepository<ProjectTask, Long> {
 
   Iterable<ProjectTask> findByProjectIdentifierOrderByPriority(String id);
+
+  ProjectTask findProjectTaskByProjectSequence(String sequence);
 }
