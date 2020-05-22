@@ -25,10 +25,7 @@ class UpdateProject extends Component {
     if (nextProps.errors) {
       this.setState({ errors: nextProps.errors });
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> branch28
     const {
       id,
       projectName,
@@ -107,11 +104,8 @@ class UpdateProject extends Component {
                 <div className="form-group">
                   <textarea
                     className={classnames("form-control form-control-lg", {
-<<<<<<< HEAD
                       "is-invalid": errors.description,
-=======
-                      "is-invalid": errors.descriptions,
->>>>>>> branch28
+
                     })}
                     placeholder="Project Description"
                     name="description"
