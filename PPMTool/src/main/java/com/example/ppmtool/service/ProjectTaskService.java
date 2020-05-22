@@ -18,17 +18,27 @@ public class ProjectTaskService {
   private BacklogRepository backlogRepository;
 
 
-  public ProjectTask addProjectTask(ProjectTask projectTask){
+  public ProjectTask addProjectTask(String projectIdentifier, ProjectTask projectTask) {
     //Pts add to a project, project != null, bl is not null
     // set backlog to projectTask
+    Backlog backlog = backlogRepository.findByProjectIdentifier(projectIdentifier);
+    projectTask.setBacklog(backlog);
+    backlog.getProjectTasks().add(projectTask);
 
-//    projectTask.setBacklog(backlog);
-//    projectTask.setPriority();
-//
-//    Backlog backlog = backlogRepository.findByProjectIdentifier(projectTask.getProjectIdentifier().toUpperCase());
-//    backlog.getProjectTasks().add(projectTask);
-//    backlog.setPTSequence();
+    Integer backSequence = backlog.getPTSequence();
+    backSequence++;
 
+    projectTask.setProjectSequence(projectIdentifier.toUpperCase() + "-" + backSequence);
+    projectTask.setProjectIdentifier(projectIdentifier);
+    backlog.setPTSequence(backSequence);
+
+    if (projectTask.getPriority() == null || projectTask.getPriority() == 0) {
+      projectTask.setPriority(3);
+    }
+
+    if (projectTask.getStatus() == null || projectTask.getStatus().equals("")) {
+      projectTask.setStatus("TO_DO");
+    }
     return projectTask;
   }
 }
