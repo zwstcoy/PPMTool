@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96e88e91-d95d-4cea-8be2-fbba0569788c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/domain/Backlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/domain/Backlog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/domain/ProjectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/domain/ProjectTask.java" afterDir="false" />
-    </list>
+    <list default="true" id="96e88e91-d95d-4cea-8be2-fbba0569788c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590018024325</updated>
       <workItem from="1590018026933" duration="10040000" />
-      <workItem from="1590116906978" duration="2821000" />
+      <workItem from="1590116906978" duration="3241000" />
     </task>
     <servers />
   </component>
