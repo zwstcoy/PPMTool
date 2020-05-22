@@ -20,3 +20,11 @@ export const getProjects = () => async (dispatch) => {
     payload: res.data,
   });
 };
+
+export const getProject = (projectId) => async (dispatch) => {
+  const res = await axios.get("http://localhost:8080/api/project/" + projectId);
+  dispatch({
+    type: GET_PROJECTS,
+    payload: res.data,
+  });
+};
