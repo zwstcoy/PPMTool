@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import UpdateProject from "./UpdateProject";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
