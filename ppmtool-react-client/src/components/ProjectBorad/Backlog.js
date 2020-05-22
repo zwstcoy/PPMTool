@@ -4,6 +4,7 @@ import ProjectTask from "./ProjectTask/ProjectTask";
 
 class Backlog extends Component {
   render() {
+    const {backlog} = this.props
     return (
       <div>
         <div className="container">
