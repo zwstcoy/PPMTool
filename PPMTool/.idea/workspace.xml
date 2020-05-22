@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e88e91-d95d-4cea-8be2-fbba0569788c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/components/Project/AddProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/components/Project/AddProject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ppmtool/domain/Project.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
