@@ -18,7 +18,7 @@ class UpdateProject extends Component {
     };
 
     this.onChange = this.onChange.bind(this);
-    // this.onSubmit = this.onSubmit.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -52,18 +52,18 @@ class UpdateProject extends Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  // onSubmit(e) {
-  //   e.preventDefault();
-  //   const updateProject = {
-  //     id: this.state.id,
-  //     projectName: this.state.projectName,
-  //     projectIdentifier: this.state.projectIdentifier,
-  //     description: this.state.description,
-  //     start_date: this.state.start_date,
-  //     end_date: this.state.end_date,
-  //   };
-  //   this.props.createProject(updateProject, this.props.history);
-  // }
+  onSubmit(e) {
+    e.preventDefault();
+    const updateProject = {
+      id: this.state.id,
+      projectName: this.state.projectName,
+      projectIdentifier: this.state.projectIdentifier,
+      description: this.state.description,
+      start_date: this.state.start_date,
+      end_date: this.state.end_date,
+    };
+    this.props.createProject(updateProject, this.props.history);
+  }
 
   render() {
     const { errors } = this.state;
@@ -74,7 +74,7 @@ class UpdateProject extends Component {
             <div className="col-md-8 m-auto">
               <h5 className="display-4 text-center">Edit Project form</h5>
               <hr />
-              <form >
+              <form onSubmit={this.onSubmit}>
                 <div className="form-group">
                   <input
                     type="text"
