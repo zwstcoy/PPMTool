@@ -7,37 +7,44 @@ import classnames from "classnames";
 
 class UpdateProjectTask extends Component {
   constructor(props) {
-    const { id } = props.match.params;
     super(props);
     this.state = {
+      id: "",
+      projectSequence: "",
       summary: "",
-      acceptCriteria: "",
+      acceptanceCriteria: "",
       status: "",
-      priority: "0",
-      projectIdentifier: id,
-      dueDate: null,
-      errors: {},
+      priority: "",
+      dueDate: "",
+      projectIdentifier: "",
+      create_At: "",
     };
-
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
-
   componentWillReceiveProps(nextProps) {
     const {
+      id,
+      projectSequence,
       summary,
-      acceptCriteria,
+      acceptanceCriteria,
       status,
       priority,
       dueDate,
+      projectIdentifier,
+      create_At,
     } = nextProps.project_task;
 
     this.setState({
+      id,
+      projectSequence,
       summary,
-      acceptCriteria,
+      acceptanceCriteria,
       status,
       priority,
       dueDate,
+      projectIdentifier,
+      create_At,
     });
   }
 
@@ -60,14 +67,11 @@ class UpdateProjectTask extends Component {
       priority: this.state.priority,
       dueDate: this.state.dueDate,
     };
-    this.props.addProjectTask(
-      this.state.projectIdentifier,
-      newProjectTask,
-      this.props.history
-    );
+    console.log(newProjectTask);
   }
 
   render() {
+    const { project_task } = this.props;
     const { id } = this.props.match.params;
     const { errors } = this.props;
 
@@ -81,7 +85,10 @@ class UpdateProjectTask extends Component {
                   Back to Project Board
                 </Link>
                 <h4 className="display-4 text-center">Update Project Task</h4>
-                <p className="lead text-center">Project Name + Project Code</p>
+                <p className="lead text-center">
+                  Project Name: {project_task.projectIdentifier} | Project Code:{" "}
+                  {project_task.projectSequence}
+                </p>
                 <form onSubmit={this.onSubmit}>
                   <div className="form-group">
                     <input
@@ -161,7 +168,6 @@ class UpdateProjectTask extends Component {
 
 UpdateProjectTask.protoType = {
   getProjectTask: PropTypes.func.isRequired,
-  addProjectTask: PropTypes.func.isRequired,
   project_task: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired,
 };
@@ -171,6 +177,4 @@ const mapStateToProps = (state) => ({
   errors: state.errors,
 });
 
-export default connect(mapStateToProps, { getProjectTask, addProjectTask })(
-  UpdateProjectTask
-);
+export default connect(mapStateToProps, { getProjectTask })(UpdateProjectTask);
