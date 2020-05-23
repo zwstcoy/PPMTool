@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { getProjectTask, addProjectTask } from "../../../actions/BacklogAction";
+import {
+  getProjectTask,
+  updateProjectTask,
+} from "../../../actions/BacklogAction";
 import PropTypes from "prop-types";
 import classnames from "classnames";
 
@@ -61,13 +64,23 @@ class UpdateProjectTask extends Component {
   onSubmit(e) {
     e.preventDefault();
     const newProjectTask = {
+      id: this.state.id,
+      projectSequence: this.state.projectSequence,
       summary: this.state.summary,
-      acceptCriteria: this.state.acceptCriteria,
+      acceptanceCriteria: this.state.acceptanceCriteria,
       status: this.state.status,
       priority: this.state.priority,
       dueDate: this.state.dueDate,
+      projectIdentifier: this.state.projectIdentifier,
+      create_At: this.state.create_At,
     };
-    console.log(newProjectTask);
+
+    this.props.updateProjectTask(
+      this.state.projectIdentifier,
+      this.state.projectSequence,
+      newProjectTask,
+      this.props.history
+    );
   }
 
   render() {
@@ -168,6 +181,7 @@ class UpdateProjectTask extends Component {
 
 UpdateProjectTask.protoType = {
   getProjectTask: PropTypes.func.isRequired,
+  updateProjectTask: PropTypes.func.isRequired,
   project_task: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired,
 };
@@ -177,4 +191,6 @@ const mapStateToProps = (state) => ({
   errors: state.errors,
 });
 
-export default connect(mapStateToProps, { getProjectTask })(UpdateProjectTask);
+export default connect(mapStateToProps, { getProjectTask, updateProjectTask })(
+  UpdateProjectTask
+);
